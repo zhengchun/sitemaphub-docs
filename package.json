@@ -1,0 +1,21 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "The sitemaphub.com documents.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "docz dev",
+    "build": "docz build",
+    "serve": "docz serve"
+  },
+  "dependencies": {
+    "docz": "^2.3.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typography-theme-github": "^0.16.19"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sitemaphub/docs.git"
+  }
+}
