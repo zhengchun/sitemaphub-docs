@@ -1,7 +1,7 @@
 export default {
   base: "/",
   public: "/static",
-  dest: "publish",
+  dest: "public",
   title: "SitemapHub Docs",
   description:"SitemapHub documents.",
   themeConfig: {
