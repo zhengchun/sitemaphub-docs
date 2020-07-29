@@ -11,7 +11,7 @@ export default {
   ignore:["README.md"],
   menu:[
     "Introduction",
-    "Add a New Site",
+    "Add New Site",
     "Create RSS Feed",
     "Create XML Sitemap",
     "Create Images Sitemap",
