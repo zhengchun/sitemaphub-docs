@@ -1,14 +1,14 @@
 ---
 name: Setting Custom Domain
 route: /setting-custom-domain
-date: 2020-07-25
+date: 2020-07-28
 ---
 
 # Setup Custom Domain for Your Sitemaps and RSS 
 
-When your created a new sitemap or RSS for your site, in the default, you only access your feed via https://feed.sitemaphub.com domain.
+When your created a new sitemap or RSS for your site, by default, you access your feed only via feed.sitemaphub.com
 
-SitemapHub allows your setting a custom domain to access your sitemaps and RSS, it's better rather than by default. like: “https://your-custom-domain/{name}”
+SitemapHub allows your setting a custom domain to access your sitemaps and RSS, it's better rather than by default. for example: “https://your-custom-domain/{name}”
 
 ### How to setting up your own branded domain. 
 
@@ -25,6 +25,7 @@ SitemapHub allows your setting a custom domain to access your sitemaps and RSS, 
 
 ![setup custom domain](../static/images/setup-custom-domain-02.png)
 
+## Add your CNAME record
 
 ** 3. Log into your domain name provider and add the CNAME record.**
 
@@ -33,7 +34,7 @@ SitemapHub allows your setting a custom domain to access your sitemaps and RSS, 
 - Select the option to add a new record. For the record type, select **CNAME** type.
 - In the **Name/Host/Alias** field, enter **<u>you-domain-name</u>**.
 - In the **Time to Live (TTL)** field, enter **86400** or leave the default.
-- In the **Value/Answer/Destination** field, enter **<u>my.sitemaphub.com</u>**.
+- In the **Value/Answer/Destination** field, enter **<u>cname.sitemaphub.com.</u>**.
 - Save the record.
 
 ![setup custom domain](../static/images/setup-custom-domain-03.png)
@@ -42,7 +43,7 @@ SitemapHub allows your setting a custom domain to access your sitemaps and RSS, 
 Note: The CNAME record take up to 48 hours to take effect, but they often take effect much sooner(usually takes 3-5 minutes). 
 
 
-** 4. Click “Save” if set up done.**
+** 4. Click “Save” if set up done. If all done, shown below:**
 
 ![setup custom domain](../static/images/setup-custom-domain-05.png)
 
@@ -50,13 +51,12 @@ When you setup your custom domain successfully, It will display on the Sitemap l
 
 ![setup custom domain](../static/images/setup-custom-domain-04.png)
 
-## SSL Certificate
+### About SSL Certificate
 
 ![setup custom domain](../static/images/setup-custom-domain-06.png)
 
-** After you've correctly configured a DNS record, we will attempt to generate an SSL certification on your behalf! **
+After you've correctly configured a DNS record, SitemapHub will attempt to generate an SSL certification on your behalf! 
 
-** SitemapHub using [Let's Encrypt](https://letsencrypt.org/) to creating an SSL certificate for your domain, and automatic renewal until you cancel this custom domain. **
-
+SitemapHub uses [Let's Encrypt](https://letsencrypt.org/) to create SSL certificate for your custom domain, and automaticlly renewal until you cancel this custom domain. 
 
 Notes: If you get an SSL certificate error when access on the web browser, please try to delete this custom domain and add it again.
