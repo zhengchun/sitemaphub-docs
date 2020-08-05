@@ -16,6 +16,7 @@ export default {
     "Create XML Sitemap",
     "Create Images Sitemap",
     "Create Videos Sitemap",
+    "Create Google News Sitemap",
     "Verify Site Ownership",
     "Setting Custom Domain",
     "Submit Sitemap to Google",
